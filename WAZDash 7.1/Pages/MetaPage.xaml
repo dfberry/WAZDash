@@ -1,0 +1,61 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="WindowsAzureStatus.Pages.MetaPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot Title="WAZDash"
+			x:Name="PivotWindowsServiceDashboard" 
+			Grid.ColumnSpan="2"   >
+
+                <controls:Pivot.TitleTemplate>
+                    <DataTemplate >
+                        <TextBlock Foreground="{StaticResource PhoneForegroundBrush}" Text="{Binding}" FontSize="20"/>
+                    </DataTemplate>
+                </controls:Pivot.TitleTemplate>
+
+                <controls:Pivot.HeaderTemplate>
+                    <DataTemplate >
+                        <TextBlock Foreground="{StaticResource PhoneAccentBrush}" Text="{Binding}" />
+                    </DataTemplate>
+                </controls:Pivot.HeaderTemplate>
+
+                <!--Pivot item one-->
+                <controls:PivotItem Header="services" >
+                    <StackPanel >
+                        <ScrollViewer x:Name="ScrollerViewerListServices" Height="510" />
+                        <TextBlock  x:Name="StackPanelServicesCountText" HorizontalAlignment="Right" FontWeight="Normal"  TextWrapping="Wrap"  />
+                        <TextBlock  HorizontalAlignment="Right" Text="* is new item"></TextBlock>
+                    </StackPanel>
+                </controls:PivotItem>
+
+                <controls:PivotItem Header="locations" >
+                    <StackPanel>
+                        <ScrollViewer x:Name="ScrollerViewerListLocations" Height="510" />
+                        <TextBlock  x:Name="StackPanelLocationsCountText" HorizontalAlignment="Right" FontWeight="Normal" />
+                        <TextBlock HorizontalAlignment="Right" Text="* is new item"></TextBlock>
+                </StackPanel>
+                </controls:PivotItem>
+                
+        </controls:Pivot>                
+            
+        <TextBlock Grid.Column="1" Height="30" HorizontalAlignment="Right" 
+				Margin="0,17,12,0" x:Name="textBlockDataAge" Text="Updated:" 
+				VerticalAlignment="Top" Width="202" TextAlignment="Right" Foreground="{StaticResource PhoneDisabledBrush}" FontSize="20" />
+
+    </Grid>
+   
+</phone:PhoneApplicationPage>

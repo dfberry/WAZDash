@@ -1,0 +1,38 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:WindowsAzureStatus_Models="clr-namespace:WindowsAzureStatus.Models" 
+    x:Class="WindowsAzureStatus.Pages.ServiceGroupsPage2" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="WAZDash" Style="{StaticResource PhoneTextNormalStyle}"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel Orientation="Vertical">
+                <TextBlock  x:Name="Service" TextWrapping="Wrap"  Foreground="{StaticResource PhoneAccentBrush}"/>
+                <ScrollViewer x:Name="ScrollerViewerList" Height="700" />
+                <TextBlock  x:Name="ServiceCountText" TextWrapping="Wrap" Foreground="{StaticResource PhoneSubtleBrush}" />
+            </StackPanel>
+        </Grid>
+        <TextBlock Grid.Column="1" Height="30" HorizontalAlignment="Right" 
+				   Margin="0,17,12,0" x:Name="textBlockDataAge" Text="Updated:" 
+				   VerticalAlignment="Top" Width="202" TextAlignment="Right" Foreground="{StaticResource PhoneDisabledBrush}" FontSize="20" />        
+     </Grid>
+</phone:PhoneApplicationPage>

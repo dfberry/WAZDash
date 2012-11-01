@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wp7AzureMgmt.Wp7ClientLibrary", "..\Wp7AzureMgmt.Wp7ClientLibrary7.1\Wp7AzureMgmt.Wp7ClientLibrary.csproj", "{D526B51E-91F7-4699-A7CD-5028E8C7BF94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAZDash71", "WAZDash71.csproj", "{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_Trial|Any CPU = Debug_Trial|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_Trial|Any CPU = Release_Trial|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D526B51E-91F7-4699-A7CD-5028E8C7BF94}.Debug_Trial|Any CPU.ActiveCfg = Debug_Trial|Any CPU
+		{D526B51E-91F7-4699-A7CD-5028E8C7BF94}.Debug_Trial|Any CPU.Build.0 = Debug_Trial|Any CPU
+		{D526B51E-91F7-4699-A7CD-5028E8C7BF94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D526B51E-91F7-4699-A7CD-5028E8C7BF94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D526B51E-91F7-4699-A7CD-5028E8C7BF94}.Release_Trial|Any CPU.ActiveCfg = Release_Trial|Any CPU
+		{D526B51E-91F7-4699-A7CD-5028E8C7BF94}.Release_Trial|Any CPU.Build.0 = Release_Trial|Any CPU
+		{D526B51E-91F7-4699-A7CD-5028E8C7BF94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D526B51E-91F7-4699-A7CD-5028E8C7BF94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}.Debug_Trial|Any CPU.ActiveCfg = Debug_Trial|Any CPU
+		{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}.Debug_Trial|Any CPU.Build.0 = Debug_Trial|Any CPU
+		{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}.Debug_Trial|Any CPU.Deploy.0 = Debug_Trial|Any CPU
+		{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}.Release_Trial|Any CPU.ActiveCfg = Release_Trial|Any CPU
+		{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}.Release_Trial|Any CPU.Build.0 = Release_Trial|Any CPU
+		{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}.Release_Trial|Any CPU.Deploy.0 = Release_Trial|Any CPU
+		{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A93E30F-5A34-4BEC-BEAC-F8B467EE80CC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

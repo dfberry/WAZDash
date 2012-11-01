@@ -1,0 +1,78 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:WindowsAzureStatus_Models="clr-namespace:WindowsAzureStatus.Models" 
+    x:Class="WindowsAzureStatus.Pages.ServiceGroupsPage" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot Title="WAZDash" 
+			x:Name="PivotWindowsGroup" 
+			Grid.ColumnSpan="2"  >
+
+            <controls:Pivot.TitleTemplate>
+                <DataTemplate >
+                    <TextBlock Foreground="{StaticResource PhoneForegroundBrush}" Text="{Binding}" FontSize="20"/>
+                </DataTemplate>
+            </controls:Pivot.TitleTemplate>
+
+            <controls:Pivot.HeaderTemplate>
+                <DataTemplate >
+                    <TextBlock Foreground="{StaticResource PhoneAccentBrush}" Text="{Binding}" />
+                </DataTemplate>
+            </controls:Pivot.HeaderTemplate>
+
+            <!--Pivot item one-->
+            <controls:PivotItem  Header="service" x:Name="PivotItem">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Visibility="Visible"   HorizontalAlignment="Left" Orientation="Vertical" Margin="0,0,10,10">
+                        <TextBlock  x:Name="Service" TextWrapping="Wrap"  Style="{StaticResource PhoneTextLargeStyle}"/>
+                        <TextBlock  x:Name="LocationCountText" TextWrapping="Wrap" Foreground="{StaticResource PhoneSubtleBrush}" />
+                    </StackPanel>
+                    <ScrollViewer x:Name="ScrollerViewerList" Height="450" />
+
+                    <!--<ListBox x:Name="ListBoxOuter" VerticalAlignment="Top" Margin="0,0,-12,0"  Height="536"   >
+                        <ListBox.ItemTemplate>
+                            <DataTemplate >
+                                <StackPanel Orientation="Vertical" VerticalAlignment="Top" >
+                                    <TextBlock Text="{Binding LocationName}" TextWrapping="Wrap" Style="{StaticResource PhoneTextTitle3Style}" />
+                                    <TextBlock Text="{Binding IssueCount}" TextWrapping="Wrap"   />
+                                    <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Issues}"  >
+                                        <ListBox.ItemTemplate >
+                                            <DataTemplate >
+                                                <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+                                                    <TextBlock Text="{Binding}" TextWrapping="Wrap" />
+                                                    
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                    
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>-->
+                </StackPanel>
+           </controls:PivotItem>
+
+        </controls:Pivot>
+        <TextBlock Grid.Column="1" Height="30" HorizontalAlignment="Right" 
+				   Margin="0,17,12,0" x:Name="textBlockDataAge" Text="Updated:" 
+				   VerticalAlignment="Top" Width="202" TextAlignment="Right" Foreground="{StaticResource PhoneDisabledBrush}" FontSize="20" />
+
+    </Grid>
+    <!--Sample code showing usage of ApplicationBar-->
+
+
+</phone:PhoneApplicationPage>

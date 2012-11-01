@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone" 
+    xmlns:UriMapper="clr-namespace:System.Windows.Navigation;assembly=Microsoft.Phone" 
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:vm="clr-namespace:WindowsAzureStatus.ViewModels"
+            
+    xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.SampleDataSourceServiceGroup" x:Class="WindowsAzureStatus.App"
+            
+    mc:Ignorable="d"
+    >
+  <!--Application Resources-->
+  <Application.Resources>
+  	
+    <!--Simple UriMapper that will be programmatically updated to point to the right page at runtime-->
+    <UriMapper:UriMapper x:Name="mapper">
+            <UriMapper:UriMapping Uri="/Pages/AboutPage.xaml" />
+    </UriMapper:UriMapper>
+    <DataTemplate x:Key="PivotPageCustomHeaderDataTemplate" >
+    	<TextBlock Foreground="{StaticResource PhoneAccentBrush}" Text="{Binding}" />
+    </DataTemplate>
+
+  </Application.Resources>
+  <Application.ApplicationLifetimeObjects>
+    <!--Required object that handles lifetime events for the application-->
+    <shell:PhoneApplicationService Launching="Application_Launching" Closing="Application_Closing" Activated="Application_Activated" Deactivated="Application_Deactivated" />
+  </Application.ApplicationLifetimeObjects>
+</Application>

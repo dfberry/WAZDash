@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutText1" xml:space="preserve">
+    <value>This [MicrosoftParentPhoneProductName] application developed by [AppAuthorName]. Current Windows Azure apps include WAZDash (Service Dashboard) &amp; WAZUp (Deployments).</value>
+  </data>
+  <data name="AppAuthorName" xml:space="preserve">
+    <value>@DFBerry</value>
+  </data>
+  <data name="AppAzureCloudLocation" xml:space="preserve">
+    <value>wazup.berryintl.com</value>
+    <comment>wp7azuremgmt.cloudapp.net</comment>
+  </data>
+  <data name="AppAzureCloudLocationTest" xml:space="preserve">
+    <value>127.0.0.1:81</value>
+  </data>
+  <data name="AppBarMenuItemTextMemory" xml:space="preserve">
+    <value>Memory =</value>
+  </data>
+  <data name="AppCompanyName" xml:space="preserve">
+    <value>Berry International</value>
+    <comment>Used in WindowsAzureStatus.Utils.Strings</comment>
+  </data>
+  <data name="AppCompanyURL" xml:space="preserve">
+    <value>berryintl.com</value>
+  </data>
+  <data name="AppConfigGetAllServicesExplanatoryText" xml:space="preserve">
+    <value>Return all services, regardless if they have issues. </value>
+  </data>
+  <data name="AppConfigShowAllExplanatoryText" xml:space="preserve">
+    <value>Show all services, including services without any current issues</value>
+  </data>
+  <data name="AppErrorMsgNoNetworkConnection" xml:space="preserve">
+    <value>No network connection can be found. This app will not work until a network connection is established.</value>
+    <comment>cell phone and wifi are both down - don't care which is available for app to work</comment>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>WAZDash</value>
+  </data>
+  <data name="BuyAppPageTextTrialExpired" xml:space="preserve">
+    <value>Your trial of WAZDash has expired. You need to purchase this app in order to continue using it.</value>
+  </data>
+  <data name="BuyAppPageTextTrialGood" xml:space="preserve">
+    <value>When your trial expires, you will need to purchase this app. Why wait? Do it now.</value>
+  </data>
+  <data name="BuyAppPageTitleTrialExpired" xml:space="preserve">
+    <value>Expired Trial</value>
+  </data>
+  <data name="BuyAppPageTitleTrialGood" xml:space="preserve">
+    <value>Valid Trial</value>
+  </data>
+  <data name="ConfigApplyPortalUsageRulesExplanatoryText" xml:space="preserve">
+    <value>Impose Windows Azure Portal usage rules. Stop/Start/Delete/SwapVips buttons only available if deployment status is READY or SUSPENDED</value>
+  </data>
+  <data name="ErrorMsgAzureMobileWebServiceDown" xml:space="preserve">
+    <value>[MicrosoftParentAzureProductName] Mobile web service is not available.</value>
+  </data>
+  <data name="ExceptionExceptionFileCaughtException" xml:space="preserve">
+    <value>ExceptionHandling.cs - ReturnException: exception caught</value>
+  </data>
+  <data name="ExceptionMsg1" xml:space="preserve">
+    <value>A problem occurred the last time you ran this application. Would you like to send an email to report it?</value>
+  </data>
+  <data name="ExceptionSubjectTitle" xml:space="preserve">
+    <value>auto-generated problem report</value>
+  </data>
+  <data name="ExceptionTextPartAppVersionNumber" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="ExceptionTextPartExceptionMessage" xml:space="preserve">
+    <value>ex.Message:</value>
+  </data>
+  <data name="ExceptionTextPartExceptionStackTrace" xml:space="preserve">
+    <value>ex.StackTrace:</value>
+  </data>
+  <data name="ExceptionTextPartExtra" xml:space="preserve">
+    <value>ExceptionHandling.cs |Extra: </value>
+  </data>
+  <data name="ExceptionTypeName" xml:space="preserve">
+    <value>ex.Type </value>
+  </data>
+  <data name="ExceptionTypeTitle" xml:space="preserve">
+    <value>Problem Report</value>
+  </data>
+  <data name="HelpAbout" xml:space="preserve">
+    <value>[AppName] developed by [Companyname] ([CompanyURL]) copyright [YearDate]. Built on [NowDateTime].</value>
+  </data>
+  <data name="HelpBeforePhone" xml:space="preserve">
+    <value>Before you use this [MicrosoftParentPhoneProductName] application, you must 1) create an account at [AppWebsiteURL], and 2) associate your [MicrosoftParentAzureProductName] resources with that account. This requires that you create a certificate on [AppWebsiteURL], then upload/register that certificate with your [MicrosoftParentAzureProductName] Account. For more detailed instructions, continue to [AppWebsiteURL].</value>
+  </data>
+  <data name="HelpIntroText" xml:space="preserve">
+    <value>This application allows you to view status information about your [MicrosoftParentAzureProductName] resources. This requires that you have an account at [AppWebsiteURL], have added [MicrosoftParentAzureProductName] resources to that account.</value>
+  </data>
+  <data name="HelpOnPhone" xml:space="preserve">
+    <value>You must provide a username and password from [AppWebsiteURL]. This username and password is required for each sync back to grab [MicrosoftParentAzureProductName] system status.</value>
+  </data>
+  <data name="HelpSupport" xml:space="preserve">
+    <value>[AppName] support provided by email. Send email support to [EmailSupport]</value>
+  </data>
+  <data name="HelpText" xml:space="preserve">
+    <value>Before Using this App, WAZDash displays status information about your [MicrosoftParentAzureProductName] deployments. 
+Before you use this [MicrosoftParentPhoneProductName] application, you must 1) create an account at [AppWebsiteURL], and 2) register your [MicrosoftParentAzureProductName] subscription id with that account. Next download the security certificate from WAZDash, upload to your [MicrosoftParentAzureProductName] Account. 
+
+One time only, before you use this app
+Create a user account on [AppWebsiteURL]. Register Subscription on the [AppWebsiteURL]. You need the Subscription Id from [MicrosoftParentAzureProductName] to complete the registration. Download certificate from [AppWebsiteURL], then upload the certificate to [MicrosoftParentAzureProductName].
+One time only, on the phone
+Purchase the WAZDash app, and enter the WAZUp account credentials on the settings page.</value>
+  </data>
+  <data name="LiteralVersion" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="LoginHelpText" xml:space="preserve">
+    <value>Enter user name and password from account created on [AppWebsiteURL]. Do not enter your [MicrosoftParentAzureProductName] user name and password. </value>
+  </data>
+  <data name="MicrosoftParentAzureProductName" xml:space="preserve">
+    <value>Windows Azure</value>
+  </data>
+  <data name="MicrosoftParentPhoneProductName" xml:space="preserve">
+    <value>Windows Phone 7 (WP7)</value>
+  </data>
+  <data name="NoDeploymentsFoundExtendedTextMsg" xml:space="preserve">
+    <value>No deployments found. Possible reasons include: 1) subscription is not registered on WAZDash website 2) corresponding certificate is not uploaded to Windows Azure 3) Hosting Service currently has no deployments.</value>
+  </data>
+  <data name="SettingsRefreshRate" xml:space="preserve">
+    <value>Automatically refresh from the web every 10 minutes</value>
+  </data>
+  <data name="SupportEmailBody" xml:space="preserve">
+    <value>Question, feature request, or bug:</value>
+  </data>
+  <data name="SupportEmailSubject" xml:space="preserve">
+    <value>[MicrosoftParentPhoneProductName] App Support Request</value>
+  </data>
+  <data name="SupportEmailToEmailAddress" xml:space="preserve">
+    <value>Wp7@BerryIntl.com</value>
+  </data>
+  <data name="TrialExpiredText" xml:space="preserve">
+    <value>(TRIAL OVER)</value>
+  </data>
+</root>
